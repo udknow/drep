@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "DINO"
+    },
+    "motivations": {
+      "@value": "I wanted to represent those who find it difficult to understand the technology or are too busy with their work, by making important decisions on their behalf and giving a voice to Cardano."
+    },
+    "objectives": {
+      "@value": "My goal is to introduce cryptocurrency to the Korean community, especially focusing on continuously educating and informing Korean people about the Cardano ecosystem and its potential."
+    },
+    "paymentAddress": {
+      "@value": "addr1q869p3un05y2u8d2zu8sqx50jkwcmrqa8jk7k747x5985ptxmfv44f88yhke5je89mgl88fyv6hj0n2y09863nw5sj2sj98uf2"
+    },
+    "qualifications": {
+      "@value": "I am a specialist with 10 years of experience at a U.S. IT company, with a background in computer science. I have been studying and actively participating in the Cardano ecosystem for 4 years, gaining proficiency in various environments such as DeFi, NFTs, and DApps. I have been running a Cardano Stake Pool with zero downtime and no incidents for 4 years and was previously a Cardano Ambassador."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "twitter"
+        },
+        "uri": {
+          "@value": "https://x.com/SPO_DINO"
+        }
+      }
+    ]
+  }
+}
