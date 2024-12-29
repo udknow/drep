@@ -87,6 +87,10 @@
     "givenName": {
       "@value": "DINO"
     },
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://raw.githubusercontent.com/udknow/drep.io/main/Cardino.png",
+    },
     "motivations": {
       "@value": "I wanted to represent those who find it difficult to understand the technology or are too busy with their work, by making important decisions on their behalf and giving a voice to Cardano."
     },
